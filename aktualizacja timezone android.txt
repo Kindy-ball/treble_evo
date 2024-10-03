@@ -17,5 +17,5 @@ When IANA release new time zone rules, the update process is:
 
 
 żeby skrypt download-iana-files.py --data się uruchomił, trzeba wklepać najpierw polecenie source build/envsetup.sh
-później, żeby zapuścić skrypt update-tzdata.py, trzeba wydać polecenie lunch z wymaganym targetem, w tym przypadku lunch treble_arm64_bgN_slim-userdebug.
+później, żeby zapuścić skrypt update-tzdata.py, trzeba wydać polecenie lunch z wymaganym targetem, w tym przypadku lunch treble_arm64_bgN_slim-userdebug. Trzeba też zainstalować pakiet "ant" - apt install ant.
 Warszawska strefa czasowa powinna być możliwa teraz do wyboru.
