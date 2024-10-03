@@ -16,6 +16,6 @@ When IANA release new time zone rules, the update process is:
 6) Upload, review, submit the changes from external/icu and system/timezone.
 
 
-żeby skrypt download-iana-files.py --data się uruchomił, trzeba wklepać najpierw polecenie source build/envsetup.sh
-później, żeby zapuścić skrypt update-tzdata.py, trzeba wydać polecenie lunch z wymaganym targetem, w tym przypadku lunch treble_arm64_bgN_slim-userdebug. Trzeba też zainstalować pakiet "ant" - apt install ant.
+żeby skrypt download-iana-files.py --data się uruchomił, trzeba wklepać najpierw polecenie source build/envsetup.sh. Po tym można uruchomić skrypt z opcją --data, a do tego bardzo dobrze użyć opcji --tools.
+później, żeby zapuścić skrypt update-tzdata.py, trzeba wydać polecenie lunch z wymaganym targetem, w tym przypadku lunch treble_arm64_bgN_slim-userdebug. Trzeba też zainstalować pakiet "ant" - apt install ant + do tego zmienić konfigurację pliku system/timezone/input_data/android/countryzones.txt tak, żeby korzystał z pobranych danych. Tym razem trzeba było zmienić nazwę z 2024a na 2024b.
 Warszawska strefa czasowa powinna być możliwa teraz do wyboru.
