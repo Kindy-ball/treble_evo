@@ -1,0 +1,21 @@
+
+When IANA release new time zone rules, the update process is:
+
+1) Run "download-iana-files.py --data" to update the input_data/iana file.
+2) Make manual modifications to input_data/android files as needed.
+3) There are sometimes code and metadata changes associated with tzdata updates
+  that should be applied to Android's copy of ICU.
+  e.g. see http://bugs.icu-project.org/trac/search?q=2015d
+4) Run update-tzdata.py to regenerate the system/timezone/output_data,
+  system/timezone/testing/data, external/icu runtime files and testing equivalents.
+5) Build/flash a device image with the changes and run CTS:
+    cts-tradefed
+    run cts -m CtsLibcoreTestCases
+    run cts -m CtsIcuTestCases
+   (And any others that you think may have been affected)
+6) Upload, review, submit the changes from external/icu and system/timezone.
+
+
+żeby skrypt download-iana-files.py --data się uruchomił, trzeba wklepać najpierw polecenie source build/envsetup.sh
+później, żeby zapuścić skrypt update-tzdata.py, trzeba wydać polecenie lunch z wymaganym targetem, w tym przypadku lunch treble_arm64_bgN_slim-userdebug.
+Warszawska strefa czasowa powinna być możliwa teraz do wyboru.
