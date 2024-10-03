@@ -2,7 +2,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, vendor/lineage/config/BoardConfigSoong.mk)
 $(call inherit-product, device/lineage/sepolicy/common/sepolicy.mk)
 
-override PRODUCT_MODEL := Evolution X GSI
+override PRODUCT_MODEL := Teclast P30S
 
 # No kernel image
 TARGET_NO_KERNEL_OVERRIDE := true
@@ -18,7 +18,7 @@ override TARGET_SUPPORTS_64_BIT_APPS := true
 
 # OTA
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.system.ota.json_url=https://raw.githubusercontent.com/mytja/treble_evo/main/ota.json
+    ro.system.ota.json_url=https://raw.githubusercontent.com/Kindy-ball/treble_evo/main/ota.json
 
 # SELinux
 SELINUX_IGNORE_NEVERALLOWS := true
