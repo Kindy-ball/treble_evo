@@ -3,14 +3,9 @@
   "date": "1725630996",
   "variants": [
     {
-      "name": "treble_arm64_bgN",
-      "size": "1802963388",
-      "url": "https://github.com/Kindy-ball/treble_evo/releases/download/20240906/evolution_arm64_bgN-9.4-unofficial-20240906.img.xz"
-    },
-    {
       "name": "treble_arm64_bgN_slim",
       "size": "1321570364",
-      "url": "https://github.com/mytja/Kindy-ball/releases/download/20240906/evolution_arm64_bgN_slim-9.4-unofficial-20240906.img.xz"
+      "url": "https://github.com/Kindy-ball/evo-ota/releases/download/20240906/evolution_arm64_bgN_slim-9.4-unofficial-20240906.img.xz"
     }
   ]
 }
